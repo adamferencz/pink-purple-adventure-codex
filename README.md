@@ -10,6 +10,7 @@ Otevři `dist/index.html` přímo v prohlížeči. Není třeba instalace, backe
 - E: rozhovor s Lunou v její blízkosti, Escape: pauza / návrat.
 - Dotyková tlačítka podporují současné držení pohybu a skoku.
 - Nepřítele porazíš skokem shora. Boční kontakt a propasti ubírají život.
+- V první úrovni poblíž začátku spí Noctis, velký démonický jednorožec s ohnivou hřívou a netopýřími křídly. Při přiblížení se probudí. Před výpadem varuje; třemi skoky na hřbet ho porazíš za 500 bodů a 15 mincí. Souboj je volitelný.
 - Zelená okurka: vyšší skok na 10 s; zlatá: nezranitelnost na 8 s; růžová: rychlost na 10 s.
 - Luna přijímá 10 / 25 / 50 mincí za 5 / 15 / 35 náklonnosti. Při 50 přidá život do maxima tří, při 80 jednorázový štít. Odměny lze získat jen jednou za hru.
 - Mince dávají 10 bodů, nepřátelé 50, okurky 25 a dokončení úrovně 200.
@@ -22,3 +23,5 @@ Všechna grafika vzniká procedurálně. Zvuk je volitelný (tlačítko ♪), sy
 Web se publikuje z kořene větve `gh-pages`, která obsahuje soubory z `dist/`. Po změnách hry a jejich commitnutí spusť `git subtree push --prefix dist github gh-pages` (remote `github` směřuje na tento repozitář). GitHub následně web automaticky nasadí. Ve standardním klonu s remote `origin` použij místo `github` název `origin`.
 
 Ověření herních mechanik a průchodu všemi úrovněmi: `node test-game.cjs`.
+
+Rychlá kontrola souboje s bossem a základních mechanik bez průchodu úrovněmi: `node test-game.cjs --boss`.
